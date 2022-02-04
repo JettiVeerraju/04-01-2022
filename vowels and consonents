@@ -1,0 +1,27 @@
+/*Jetti Veerraju RJY_ADC Vowels and Consonents count*/
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    int n,i,count=0,flag;
+    char str[10],c;
+    printf("Enter the name:");
+    scanf("%s",str);
+      n=strlen(str);
+    for(i=0;i<n;i++)
+    {
+        c=str[i];
+        if(c=='a'||c=='A'||c=='e'||c=='E'||c=='i'||c=='I'||c=='o'||c=='O'||c=='u'||c=='U')
+        {
+        count=count+1;
+        }
+    
+    else
+        flag=flag+1;
+        }
+    printf("The number of vowels =%d",count);
+    printf("\n The number of consonents =%d",flag);
+    return 0;
+}
